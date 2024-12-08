@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>🍕🍟🥪 𝓣𝓪𝓼𝓽𝓮 𝓣𝓪𝓵𝓵𝔂 🥙🥡🍖</h1>
+        <form id="menuForm">
+            <table>
+                <tr>
+                    <th>Item</th>
+                    <th>Price (₹)</th>
+                    <th>Quantity</th>
+                </tr>
+                <!-- Menu Items -->
+                <tr>
+                    <td>Burger</td>
+                    <td>₹149</td>
+                    <td><input type="number" name="Burger" min="0" value="0" data-price="149"></td>
+                </tr>
+                <tr>
+                    <td>Pizza</td>
+                    <td>₹299</td>
+                    <td><input type="number" name="Pizza" min="0" value="0" data-price="299"></td>
+                </tr>
+                <tr>
+                    <td>Pasta</td>
+                    <td>₹249</td>
+                    <td><input type="number" name="Pasta" min="0" value="0" data-price="249"></td>
+                </tr>
+                <tr>
+                    <td>Fries</td>
+                    <td>₹99</td>
+                    <td><input type="number" name="Fries" min="0" value="0" data-price="99"></td>
+                </tr>
+                <tr>
+                    <td>Salad</td>
+                    <td>₹129</td>
+                    <td><input type="number" name="Salad" min="0" value="0" data-price="129"></td>
+                </tr>
+                <tr>
+                    <td>Soda</td>
+                    <td>₹49</td>
+                    <td><input type="number" name="Soda" min="0" value="0" data-price="49"></td>
+                </tr>
+                <tr>
+                    <td>Coffee</td>
+                    <td>₹79</td>
+                    <td><input type="number" name="Coffee" min="0" value="0" data-price="79"></td>
+                </tr>
+            </table>
+            <button type="button" id="calculateButton">Calculate Bill</button>
+        </form>
+        <div id="billDetails" class="bill hidden">
+            <h2>Bill Details</h2>
+            <ul id="billItems"></ul>
+            <h3>Total: ₹<span id="totalAmount">0.00</span></h3>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
